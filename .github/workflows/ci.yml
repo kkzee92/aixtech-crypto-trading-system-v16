@@ -32,4 +32,6 @@ jobs:
         run: ruff format --check .
 
       - name: Tests
+        env:
+          PYTHONPATH: src
         run: pytest -q
